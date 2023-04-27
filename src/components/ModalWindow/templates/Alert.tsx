@@ -1,7 +1,6 @@
 import React, { FC, ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 import { Button } from "src/components/Button";
-import { ButtonVariants } from "src/components/Button/types";
 
 const T_PREFIX = "modal-alert";
 const DEFAULT_APPROVAL_BUTTON_NAME = "ok";
@@ -21,7 +20,7 @@ export const Alert: FC<Props> = ({ children, approvalButtonName, onClose }) => {
   return (
     <div>
       {children}
-      <Button variant={ButtonVariants.PRIMARY} onClick={onClose}>
+      <Button className="" onClick={onClose}>
         {approval}
       </Button>
     </div>

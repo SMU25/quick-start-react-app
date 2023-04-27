@@ -1,5 +1,4 @@
 import { FC } from "react";
-import { TextFieldVariants } from "src/components/FormField/types";
 
 export interface IOptionSelect {
   value: string;
@@ -15,7 +14,6 @@ export interface IFormField {
   className?: string;
   containerClassName?: string;
   labelClassName?: string;
-  variant?: TextFieldVariants;
   options?: IOptionSelect[];
 }
 

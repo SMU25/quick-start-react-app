@@ -1,4 +1,4 @@
-import * as yup from "yup";
+import * as yup from "Yup";
 import { isValidPhoneNumber } from "libphonenumber-js";
 
 export const NAME_VALIDATION_SCHEMA = yup.string().min(2, {

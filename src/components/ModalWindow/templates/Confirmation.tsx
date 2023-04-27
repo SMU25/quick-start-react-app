@@ -1,7 +1,6 @@
 import React, { FC, ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 import { Button } from "src/components/Button";
-import { ButtonVariants } from "src/components/Button/types";
 
 const T_PREFIX = "modal-confirmation";
 const DEFAULT_CONFIRM_BUTTON_NAME = "yes";
@@ -34,10 +33,10 @@ export const Confirmation: FC<Props> = ({
     <div>
       {children}
       <div>
-        <Button variant={ButtonVariants.PRIMARY} onClick={onConfirm}>
+        <Button className="" onClick={onConfirm}>
           {confirm}
         </Button>
-        <Button variant={ButtonVariants.SECONDARY} onClick={onClose}>
+        <Button className="" onClick={onClose}>
           {cancel}
         </Button>
       </div>

@@ -3,11 +3,6 @@ import cn from "classnames";
 import { useField } from "formik";
 import { IFormField } from "src/types/form";
 import { FormField } from ".";
-import {
-  DEFAULT_CLASS_NAME_TEXT_FIELD,
-  TEXT_FIELD_STYLE_VARIANTS,
-} from "./constants";
-import { TextFieldVariants } from "./types";
 
 interface Props extends Omit<IFormField, "type"> {
   containerClassName?: string;
@@ -21,7 +16,6 @@ export const Textarea: FC<Props> = ({
   className,
   containerClassName,
   labelClassName,
-  variant = TextFieldVariants.PRIMARY,
   ...props
 }) => {
   const fieldId = id || props.name;
@@ -40,13 +34,7 @@ export const Textarea: FC<Props> = ({
     >
       <textarea
         id={fieldId}
-        className={cn(
-          "min-h-37.5",
-          DEFAULT_CLASS_NAME_TEXT_FIELD,
-          TEXT_FIELD_STYLE_VARIANTS[variant],
-          className,
-          { "border-red-primary": showError }
-        )}
+        className={cn("", className, { "": showError })}
         {...props}
         {...field}
       />

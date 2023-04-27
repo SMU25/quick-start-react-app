@@ -21,12 +21,12 @@ export const ModalWindow: FC = () => {
   useClickOutside(modalRef, onClose);
 
   return (
-    <div className={cn({ visible: isOpen })}>
-      <div ref={modalRef} className={cn("invisible", { visible: isOpen })}>
+    <div className={cn({ "": isOpen })}>
+      <div ref={modalRef} className={cn("", { "": isOpen })}>
         <Button onClick={onClose}>
           <Close />
         </Button>
-        {title && <h3 className="truncate">{title}</h3>}
+        {title && <h3 className="">{title}</h3>}
         {text && <p>{text}</p>}
         {children}
       </div>

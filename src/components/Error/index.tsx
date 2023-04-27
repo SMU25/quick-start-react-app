@@ -21,9 +21,5 @@ export const Error: FC<Props> = ({ children, className, showError }) => {
       ? t(`${T_PREFIX} - ${children}`)
       : t(`${T_PREFIX} - ${children.i18nKey}`, children.i18nParams);
 
-  return (
-    <div className={cn("absolute -bottom-6 left-4 text-red-dark", className)}>
-      {String(errorText)}
-    </div>
-  );
+  return <div className={cn("", className)}>{String(errorText)}</div>;
 };

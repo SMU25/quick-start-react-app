@@ -13,7 +13,7 @@ export const BurgetButton: FC<Props> = ({ className, setIsOpen }) => {
   return (
     <button className={className} onClick={toggleIsOpen}>
       {ARRAY_NUMBERS.map((item) => (
-        <div key={item} className="w-7.5 h-0.5 bg-black-dark mt-3 first:mt-0" />
+        <div key={item} className="" />
       ))}
     </button>
   );
