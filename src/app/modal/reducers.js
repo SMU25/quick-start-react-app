@@ -1,5 +1,5 @@
 import { showModal, hideModal } from "./actions";
-import { initialState } from "./slice.оs";
+import { initialState } from "./slice";
 
 export const showModalReducer = (builder) => {
   builder.addCase(showModal, (state, action) => {
