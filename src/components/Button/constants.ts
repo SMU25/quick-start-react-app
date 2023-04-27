@@ -1,7 +1,5 @@
 import { ButtonVariants } from "./types";
 
-export const T_PREFIX = "button";
-
 export const BUTTON_STYLE_VARIANTS = {
   [ButtonVariants.PRIMARY]:
     "bg-red-primary py-3.5 px-5 text-white rounded-sm hover:bg-red-dark active:translate-y-1 active:brightness-95",
