@@ -1,4 +1,4 @@
-import react, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 
 const PAGE_QUERY_PARAM_KEY = "page";
@@ -24,7 +24,13 @@ export const useQueryParams = (initialValues?: InitialValues) => {
   const [limit, setLimit] = useState<number>(limitInitialValue);
   const [offset, setOffset] = useState<number>(offsetInitialValue);
 
-  const isChangedLimit = limitInitialValue !== limit;
+  const getQueryParam = (paramKey: string | number) =>
+    queryParams.get(String(paramKey));
+
+  const setQueryParam = (
+    paramKey: string | number,
+    paramValue: string | number
+  ) => setQueryParams(`${paramKey}=${paramValue}`);
 
   const setQueryParamPage = (page: number) =>
     setQueryParams(`${PAGE_QUERY_PARAM_KEY}=${page}`);
@@ -54,7 +60,8 @@ export const useQueryParams = (initialValues?: InitialValues) => {
     page,
     limit,
     offset,
-    isChangedLimit,
+    getQueryParam,
+    setQueryParam,
     setQueryParamPage,
     setQueryParamLimit,
     setQueryParamOffset,

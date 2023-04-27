@@ -1,1 +1,16 @@
-{}
+{
+  "form-field - first-name": "Прізвище",
+  "form-field - last-name": "Ім'я",
+  "form-field - phone": "Номер телефону",
+  "form-field - email": "Електронна адреса",
+  "form-field - message": "Повідомлення",
+
+  "error - required": "Обов'язкове поле",
+  "error - include-symbol": "Має містити спеціальний символ (&,!,etc.)",
+  "error - passwords-must-match": "Паролі мають збігатися!",
+  "error - incorrect-email": "Введіть коректну електронну адресу",
+  "error - incorrect-phone-number": "Має містити лише цифри, +()-. та x.",
+  "error - phone is invalid": "Недійсний номер телефону",
+  "error - min-symbols": "Мінімальна кількість {{count}} символів",
+  "error - max-symbols": "Максимальна кількість {{count}} символів"
+}

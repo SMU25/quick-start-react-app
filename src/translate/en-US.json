@@ -1,1 +1,20 @@
-{}
+{
+  "form-field - first-name": "First Name",
+  "form-field - last-name": "Last Name",
+  "form-field - phone": "Phone Number",
+  "form-field - email": "Email",
+  "form-field - message": "Message",
+
+  "error - required": "Required",
+  "error - include-symbol": "Must include special symbol (&,!,etc.)",
+  "error - passwords-must-match": "Passwords must match!",
+  "error - incorrect-email": "Enter the correct email",
+  "error - incorrect-phone-number": "Must contain only numbers, +()-. and x.",
+  "error - phone is invalid": "Invalid phone number",
+  "error - min-symbols": "Minimum is {{count}} symbols",
+  "error - max-symbols": "Maximum is {{count}} symbols",
+
+  "modal-confirmation - yes": "Yes",
+  "modal-confirmation - no": "No",
+  "modal-alert - ok": "Ok"
+}
