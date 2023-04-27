@@ -21,8 +21,8 @@ export const ModalWindow: FC = () => {
   useClickOutside(modalRef, onClose);
 
   return (
-    <div className={cn({ "": isOpen })}>
-      <div ref={modalRef} className={cn("", { "": isOpen })}>
+    <div className={cn({ visible: isOpen })}>
+      <div ref={modalRef} className={cn("invisible", { visible: isOpen })}>
         <Button onClick={onClose}>
           <Close />
         </Button>
